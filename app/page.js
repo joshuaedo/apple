@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { home__backgrounds } from "./image";
+import { appleIcons } from "./image";
 
 export default function HomePage() {
+  const [AppleIcon, SearchIcon, ShoppingBagIcon, LargeAppleIcon] = appleIcons;
   const [
     hero,
     home__backgroundOne,
@@ -30,14 +32,19 @@ export default function HomePage() {
         }}
       >
         <div className="absolute text-center m-auto left-0 right-0 bottom-10 space-y-3">
-          <h2 className="text-6xl font-bold opacity-90">Vision Pro</h2>
-          <p className="text-2xl opacity-90">
+          <div className="flex mx-auto items-center justify-center">
+            <LargeAppleIcon />
+            <h2 className="text-4xl md:text-6xl font-bold opacity-90 inline">
+              Vision Pro
+            </h2>
+          </div>
+          <p className="text-base md:text-2xl opacity-90">
             Welcome to the era of spatial computing.
           </p>
-          <p className="text-gray-500 text-xl">
+          <p className="text-gray-500 text-sm md:text-xl">
             Available early next year in the U.S
           </p>
-          <p className="text-blue-800 text-xl">Learn More &gt;</p>
+          <p className="text-blue-800 text-sm md:text-xl">Learn More &gt;</p>
         </div>
       </section>
       <section
