@@ -1,12 +1,16 @@
+"use client";
 import Image from "next/image";
 import { home__backgrounds } from "./image";
 import { appleIcons } from "./image";
+import useDeviceSize from "./hooks/useDeviceSize";
 
 export default function HomePage() {
+  const [width, height] = useDeviceSize();
+  const isMobile = width <= 767;
+
   const [AppleIcon, SearchIcon, ShoppingBagIcon, LargeAppleIcon] = appleIcons;
   const [
     hero,
-    home__backgroundOne,
     home__backgroundTwo,
     home__backgroundThree,
     home__backgroundFour,
@@ -25,13 +29,13 @@ export default function HomePage() {
   return (
     <main className="home-page">
       <section
-        className="h-screen relative"
+        className="h-[90vh] relative"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/apple-vision-pro/hero_apple_vision_pro__e8407ehady6i_largetall_2x.jpg)`,
         }}
       >
-        <div className="absolute text-center m-auto left-0 right-0 bottom-10 space-y-3">
+        <div className="absolute text-center m-auto left-0 right-0 bottom-10 space-y-3 px-3">
           <div className="flex mx-auto items-center justify-center">
             <LargeAppleIcon />
             <h2 className="text-4xl md:text-6xl font-bold opacity-90 inline">
@@ -48,10 +52,21 @@ export default function HomePage() {
         </div>
       </section>
       <section
-        className="h-screen"
+        className="h-[90vh]"
         style={{
           ...backgroundStyles,
-          backgroundImage: `url(${home__backgroundOne.src})`,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
+        }}
+      ></section>
+      <section
+        className="h-[90vh]"
+        style={{
+          ...backgroundStyles,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/macbook-air-15/hero_macbook_air_15_announce__fz5mtxnl9l6q${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
         }}
       ></section>
     </main>

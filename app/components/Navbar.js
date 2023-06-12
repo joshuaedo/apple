@@ -5,8 +5,8 @@ import { appleIcons } from "../image";
 export default function Navbar() {
   const [AppleIcon, SearchIcon, ShoppingBagIcon] = appleIcons;
   return (
-    <div className="flex fixed z-50">
-      <div className="bg-[#fbfbfd] opacity-80 flex text-sm text-clip h-11 space-x-7 mx-auto whitespace-nowrap px-4 w-[100vw]">
+    <div className="flex fixed z-50 w-[100vw] bg-[#fbfbfd] opacity-80">
+      <div className="flex text-sm text-clip h-11 space-x-7 mx- md:mx-auto whitespace-nowrap px-4 ">
         <Link className="my-auto" href="/">
           <AppleIcon />
         </Link>

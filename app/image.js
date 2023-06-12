@@ -1,5 +1,4 @@
 import hero from "./images/hero.jpg";
-import home__backgroundOne from "./images/figure (1).png";
 import home__backgroundTwo from "./images/figure (2).png";
 import home__backgroundThree from "./images/figure (3).png";
 import home__backgroundFour from "./images/figure (4).png";
@@ -10,7 +9,6 @@ import home__backgroundEight from "./images/figure (8).png";
 
 export const home__backgrounds = [
   hero,
-  home__backgroundOne,
   home__backgroundTwo,
   home__backgroundThree,
   home__backgroundFour,
@@ -29,8 +27,7 @@ import carouselSix from "./images/carousel-images/6.webp";
 import carouselSeven from "./images/carousel-images/7.webp";
 import carouselEight from "./images/carousel-images/8.webp";
 
-async function AppleIcon() {
-  "use server";
+function AppleIcon() {
   return (
     <svg
       width="12"
@@ -47,14 +44,13 @@ async function AppleIcon() {
   );
 }
 
-async function LargeAppleIcon() {
-  "use server";
+function LargeAppleIcon() {
   return (
     <svg
       viewBox="0 0 14 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-7 h-7"
+      className="w-7 h-7 md:w-9 md:h-9"
     >
       <path
         d="M13.0729 5.52137C12.9799 5.59367 11.3481 6.51287 11.3481 8.55777C11.3481 10.9229 13.424 11.7595 13.486 11.7801C13.4757 11.8317 13.1555 12.9265 12.3912 14.0419C11.7096 15.0231 10.9969 16.0042 9.91251 16.0042C8.82811 16.0042 8.54921 15.3742 7.29951 15.3742C6.08081 15.3742 5.64701 16.0249 4.65551 16.0249C3.66401 16.0249 2.97201 15.116 2.17681 14.0006C1.25761 12.6889 0.514008 10.6543 0.514008 8.72297C0.514008 5.62457 2.52801 3.98237 4.51091 3.98237C5.56441 3.98237 6.44221 4.67437 7.10321 4.67437C7.73321 4.67437 8.71441 3.94107 9.91241 3.94107C10.3669 3.94117 11.9988 3.98257 13.0729 5.52137ZM9.34451 2.62957C9.84021 2.04087 10.1914 1.22497 10.1914 0.409067C10.1914 0.295467 10.1811 0.181867 10.1604 0.0888672C9.35481 0.119867 8.39431 0.625968 7.81591 1.29727C7.36151 1.81367 6.93801 2.62957 6.93801 3.45587C6.93801 3.57977 6.95871 3.70377 6.96901 3.74507C7.02061 3.75537 7.10331 3.76577 7.18591 3.76577C7.90891 3.76567 8.81771 3.28027 9.34451 2.62957Z"
@@ -64,8 +60,7 @@ async function LargeAppleIcon() {
   );
 }
 
-async function SearchIcon() {
-  "use server";
+function SearchIcon() {
   return (
     <svg
       width="14"
@@ -82,8 +77,7 @@ async function SearchIcon() {
   );
 }
 
-async function ShoppingBagIcon() {
-  "use server";
+function ShoppingBagIcon() {
   return (
     <svg
       width="30"
