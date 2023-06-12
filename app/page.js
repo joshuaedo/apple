@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import { home__backgrounds } from "./image";
+// import Image from "next/image";
 import { appleIcons } from "./image";
 import useDeviceSize from "./hooks/useDeviceSize";
 
@@ -9,16 +8,6 @@ export default function HomePage() {
   const isMobile = width <= 767;
 
   const [AppleIcon, SearchIcon, ShoppingBagIcon, LargeAppleIcon] = appleIcons;
-  const [
-    hero,
-    home__backgroundTwo,
-    home__backgroundThree,
-    home__backgroundFour,
-    home__backgroundFive,
-    home__backgroundSix,
-    home__backgroundSeven,
-    home__backgroundEight,
-  ] = home__backgrounds;
 
   const backgroundStyles = {
     backgroundPosition: "center",
@@ -27,9 +16,9 @@ export default function HomePage() {
   };
 
   return (
-    <main className="home-page">
+    <main className="home-page max-w-[100vw]">
       <section
-        className="h-[90vh] relative"
+        className="h-[90vh] w-[100vw] relative"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/apple-vision-pro/hero_apple_vision_pro__e8407ehady6i_largetall_2x.jpg)`,
@@ -51,8 +40,9 @@ export default function HomePage() {
           <p className="text-blue-800 text-sm md:text-xl">Learn More &gt;</p>
         </div>
       </section>
+
       <section
-        className="h-[90vh]"
+        className="h-[90vh] w-[100vw]"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm${
@@ -60,11 +50,72 @@ export default function HomePage() {
           })`,
         }}
       ></section>
+
       <section
-        className="h-[90vh]"
+        className="h-[90vh] w-[100vw]"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/macbook-air-15/hero_macbook_air_15_announce__fz5mtxnl9l6q${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
+        }}
+      ></section>
+
+      <section
+        className="h-[90vh] w-[100vw] "
+        style={{
+          ...backgroundStyles,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/mac-studio/promo_mac_studio_announce__do7xnc8z5mgm${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
+        }}
+      ></section>
+
+      <section
+        className="h-[90vh] w-[100vw] "
+        style={{
+          ...backgroundStyles,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/mac-pro/promo_mac_pro_announce__dd118zq1ap6q${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
+        }}
+      ></section>
+
+      <section
+        className="h-[90vh] w-[100vw]"
+        style={{
+          ...backgroundStyles,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
+        }}
+      ></section>
+
+      <section
+        className="h-[90vh] w-[100vw]"
+        style={{
+          ...backgroundStyles,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/apple-watch-series-8/promo_apple_watch_series_8_spring__d9hfvufh7hyu${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
+        }}
+      ></section>
+
+      <section
+        className="h-[90vh] w-[100vw]"
+        style={{
+          ...backgroundStyles,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/apple-design-awards-2023/design_awards_promo__gdn0njc261yu${
+            isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
+          })`,
+        }}
+      ></section>
+
+      <section
+        className="h-[90vh] w-[100vw]"
+        style={{
+          ...backgroundStyles,
+          backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/apple-card/tile__cauwwcyyn9hy${
             isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
           })`,
         }}
