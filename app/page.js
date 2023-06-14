@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="absolute text-center m-auto left-0 right-0 bottom-10 space-y-3 px-3">
           <div className="flex mx-auto items-center justify-center">
             <LargeAppleIcon />
-            <h2 className="text-4xl md:text-6xl font-bold opacity-90 inline">
+            <h2 className="text-3xl md:text-6xl font-bold opacity-90 inline">
               Vision Pro
             </h2>
           </div>
@@ -47,27 +47,57 @@ export default function HomePage() {
         </div>
       </section>
       <section
-        className="h-[90vh] w-full"
+        className="h-[90vh] w-full relative"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm${
             isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
           })`,
         }}
-      ></section>
+      >
+        <div className="absolute text-center m-auto left-0 right-0 top-10 space-y-4 px-3">
+          <div className="flex mx-auto items-center justify-center">
+            <h2 className="text-3xl md:text-6xl font-bold opacity-90 inline text-white">
+              iPhone 14 Pro
+            </h2>
+          </div>
+          <p className="text-base md:text-2xl opacity-90 text-white">
+            Pro.Beyond.
+          </p>
+          <p className="text-blue-600 text-sm md:text-xl">
+            <span> Learn More &gt; </span>
+            <span className="pl-4"> Buy &gt;</span>
+          </p>
+        </div>
+      </section>
       <section
-        className="h-[90vh] w-full"
+        className="h-[90vh] w-full relative"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/macbook-air-15/hero_macbook_air_15_announce__fz5mtxnl9l6q${
             isMobile ? "_small_2x.jpg" : "_largetall_2x.jpg"
           })`,
         }}
-      ></section>
+      >
+        <div className="absolute text-center m-auto left-0 right-0 top-10 space-y-4 px-3">
+          <div className="flex mx-auto items-center justify-center">
+            <h2 className="text-3xl md:text-6xl font-bold opacity-90 inline">
+              MacBook Air 15”
+            </h2>
+          </div>
+          <p className="text-base md:text-2xl opacity-90">
+            Impressively big.Impossibly thin.
+          </p>
+          <p className="text-blue-600 text-sm md:text-xl">
+            <span> Learn More &gt; </span>
+            <span className="pl-4"> Buy &gt;</span>
+          </p>
+        </div>
+      </section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-3">
         <section
-          className="h-[90vh]"
+          className="h-[90vh] relative"
           style={{
             ...backgroundStyles,
             backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/mac-studio/promo_mac_studio_announce__do7xnc8z5mgm_small_2x.jpg
@@ -76,7 +106,7 @@ export default function HomePage() {
         ></section>
 
         <section
-          className="h-[90vh]"
+          className="h-[90vh] relative"
           style={{
             ...backgroundStyles,
             backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/mac-pro/promo_mac_pro_announce__dd118zq1ap6q_small_2x.jpg
@@ -85,7 +115,7 @@ export default function HomePage() {
         ></section>
 
         <section
-          className="h-[90vh]"
+          className="h-[90vh] relative"
           style={{
             ...backgroundStyles,
             backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_small_2x.jpg
@@ -94,7 +124,7 @@ export default function HomePage() {
         ></section>
 
         <section
-          className="h-[90vh]"
+          className="h-[90vh] relative"
           style={{
             ...backgroundStyles,
             backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/apple-watch-series-8/promo_apple_watch_series_8_spring__d9hfvufh7hyu_small_2x.jpg
@@ -103,7 +133,7 @@ export default function HomePage() {
         ></section>
 
         <section
-          className="h-[90vh]"
+          className="h-[90vh] relative"
           style={{
             ...backgroundStyles,
             backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/apple-design-awards-2023/design_awards_promo__gdn0njc261yu_small_2x.jpg
@@ -112,7 +142,7 @@ export default function HomePage() {
         ></section>
 
         <section
-          className="h-[90vh]"
+          className="h-[90vh] relative"
           style={{
             ...backgroundStyles,
             backgroundImage: `url(https://www.apple.com/v/home/bb/images/promos/apple-card/tile__cauwwcyyn9hy_small_2x.jpg
