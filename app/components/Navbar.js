@@ -3,10 +3,16 @@ import Link from "next/link";
 import { appleIcons } from "../image";
 
 export default function Navbar() {
-  const [AppleIcon, SearchIcon, ShoppingBagIcon] = appleIcons;
+  const [
+    AppleIcon,
+    SearchIcon,
+    ShoppingBagIcon,
+    LargeAppleIcon,
+    HamburgerDisabledIcon,
+  ] = appleIcons;
   return (
     <div className="flex fixed z-50 w-[100vw] bg-[#fbfbfd] opacity-80">
-      <div className="flex text-sm text-clip h-11 space-x-7 mx- md:mx-auto whitespace-nowrap px-4 ">
+      <div className="flex text-sm text-clip h-11 space-x-7 mx- md:mx-auto whitespace-nowrap px-4 relative w-screen md:w-auto">
         <Link className="my-auto" href="/">
           <AppleIcon />
         </Link>
@@ -43,12 +49,18 @@ export default function Navbar() {
         <Link className="my-auto hidden md:inline" href="https://apple.com/">
           Support
         </Link>
-        <Link className="my-auto" href="https://apple.com/">
-          <SearchIcon />
-        </Link>
-        <Link className="my-auto" href="https://apple.com/">
-          <ShoppingBagIcon />
-        </Link>
+
+        <div className="flex space-x-3 md:space-x-7 absolute right-4 pr-4 md:static">
+          <Link className="my-auto" href="https://apple.com/">
+            <SearchIcon />
+          </Link>
+          <Link className="my-auto" href="https://apple.com/">
+            <ShoppingBagIcon />
+          </Link>
+          <div className="my-auto inline md:hidden">
+            <HamburgerDisabledIcon />
+          </div>
+        </div>
       </div>
     </div>
   );
