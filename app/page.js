@@ -7,7 +7,13 @@ export default function HomePage() {
   const [width, height] = useDeviceSize();
   const isMobile = width <= 767;
 
-  const [AppleIcon, SearchIcon, ShoppingBagIcon, LargeAppleIcon, HamburgerDisabledIcon] = appleIcons;
+  const [
+    AppleIcon,
+    SearchIcon,
+    ShoppingBagIcon,
+    LargeAppleIcon,
+    HamburgerDisabledIcon,
+  ] = appleIcons;
 
   const backgroundStyles = {
     backgroundPosition: "center",
@@ -16,9 +22,9 @@ export default function HomePage() {
   };
 
   return (
-    <main className="home-page max-w-[100vw]">
+    <main className="home-page max-w-full">
       <section
-        className="h-[90vh] w-[100vw] relative"
+        className="h-[90vh] w-full relative"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/apple-vision-pro/hero_apple_vision_pro__e8407ehady6i_largetall_2x.jpg)`,
@@ -41,7 +47,7 @@ export default function HomePage() {
         </div>
       </section>
       <section
-        className="h-[90vh] w-[100vw]"
+        className="h-[90vh] w-full"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm${
@@ -50,7 +56,7 @@ export default function HomePage() {
         }}
       ></section>
       <section
-        className="h-[90vh] w-[100vw]"
+        className="h-[90vh] w-full"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/macbook-air-15/hero_macbook_air_15_announce__fz5mtxnl9l6q${
