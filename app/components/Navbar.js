@@ -50,7 +50,7 @@ export default function Navbar() {
           Support
         </Link>
 
-        <div className="flex space-x-3 md:space-x-7 absolute right-4 pr-4 md:static">
+        <div className="flex space-x-3 md:space-x-7 absolute right-4 md:static">
           <Link className="my-auto" href="https://apple.com/">
             <SearchIcon />
           </Link>
