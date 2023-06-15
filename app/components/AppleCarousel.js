@@ -29,6 +29,11 @@ export default function AppleCarousel() {
         <Image loading="lazy" src={carouselOne} alt="" objectFit={true} />
         <Image loading="lazy" src={carouselTwo} alt="" objectFit={true} />
         <Image loading="lazy" src={carouselThree} alt="" objectFit={true} />
+        <Image loading="lazy" src={carouselFour} alt="" objectFit={true} />
+        <Image loading="lazy" src={carouselFive} alt="" objectFit={true} />
+        <Image loading="lazy" src={carouselSix} alt="" objectFit={true} />
+        <Image loading="lazy" src={carouselSeven} alt="" objectFit={true} />
+        <Image loading="lazy" src={carouselEight} alt="" objectFit={true} />
       </Carousel>
     </>
   );
