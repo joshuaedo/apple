@@ -24,7 +24,7 @@ export default function AppleCarousel() {
         showArrows={false}
         showThumbs={false}
         interval={3000}
-        className="h-auto m-0 b-0 p-0 bg-black"
+        className="h-auto m-0 b-0 p-0 bg-white mt-3"
       >
         <Image loading="lazy" src={carouselOne} alt="" objectFit={true} />
         <Image loading="lazy" src={carouselTwo} alt="" objectFit={true} />
