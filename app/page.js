@@ -18,7 +18,7 @@ export default function HomePage() {
 
   const backgroundStyles = {
     backgroundPosition: "center",
-    backgroundSize: "cover",
+    backgroundSize: isMobile ? "140%" : "cover",
     backgroundRepeat: "no-repeat",
   };
 
@@ -27,7 +27,9 @@ export default function HomePage() {
       <section
         className="h-[90vh] w-full relative"
         style={{
-          ...backgroundStyles,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/apple-vision-pro/hero_apple_vision_pro__e8407ehady6i_largetall_2x.jpg)`,
         }}
       >
@@ -49,7 +51,7 @@ export default function HomePage() {
       </section>
 
       <section
-        className="h-[83vh] md:h-[90vh] w-full relative"
+        className="h-[83vh] md:h-[90vh] w-full relative bg-cover"
         style={{
           ...backgroundStyles,
           backgroundImage: `url(https://www.apple.com/v/home/bb/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm${
